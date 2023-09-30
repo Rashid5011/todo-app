@@ -1,0 +1,27 @@
+/* Define the keyframes for the animation */
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Style the loader container */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the loader element */
+.loader {
+  font-size: 1px;
+  /* padding: 1px 20px; */
+  background-color: red;
+  color: red;
+  width: 50%;
+  border-radius: 5px;
+  animation: moveLeftToRight 2s linear infinite; /* Apply the animation */
+}
